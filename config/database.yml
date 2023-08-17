@@ -23,7 +23,7 @@ development:
   username: root
   password:
   host: localhost
-  database: protospace-39611_development
+  database: protospace_39611_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -34,7 +34,7 @@ test:
   username: root
   password:
   host: localhost
-  database: protospace-39611_test
+  database: protospace_39611_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -60,6 +60,6 @@ production:
   <<: *default
   adapter: postgresql
   url: <%= ENV['DATABASE_URL'] %>
-  database: protospace-39611_production
-  username: protospace-39611
-  password: <%= ENV["PROTOSPACE-39611_DATABASE_PASSWORD"] %>
+  database: protospace_39611_production
+  username: protospace_39611
+  password: <%= ENV["PROTOSPACE_39611_DATABASE_PASSWORD"] %>
